@@ -101,3 +101,22 @@ SELECT email as student_email FROM student
 
 -- sort data in a specific order
 SELECT * FROM student ORDER BY first_name ASC
+
+-- to print only unique data
+SELECT DISTINCT country FROM student
+
+SELECT * FROM student WHERE country = 'USA'
+
+SELECT * FROM student WHERE country = 'India' AND age > 20
+
+SELECT * FROM student WHERE country = 'Bangladesh' OR age >= 22
+
+SELECT *
+FROM student
+WHERE (
+        country = 'Bangladesh'
+        OR country = 'Pakistan'
+    )
+    AND age >= 22
+
+SELECT * FROM student WHERE first_name LIKE 'R%'
