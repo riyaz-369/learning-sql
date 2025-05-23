@@ -169,6 +169,7 @@ SELECT count(*) as total FROM student
 -- to print maximum length of first name
 SELECT max(length(first_name)) FROM student
 
+-- ---------------LIKE, ILIKE CLAUSE----------------
 -- to print only first name which starts with R
 SELECT * FROM student WHERE first_name LIKE 'R%'
 
@@ -180,3 +181,15 @@ SELECT * FROM student WHERE first_name LIKE '_a%'
 
 -- case insensitive
 SELECT * FROM student WHERE first_name ILIKE 'a%'
+
+--  ---------------LIMIT, OFFSET CLAUSE----------------
+-- to print only first 2 data
+SELECT * FROM student LIMIT 2
+
+-- to print data from 2nd to 4th
+SELECT * FROM student OFFSET 1 LIMIT 3
+
+-- pagination
+SELECT * FROM student LIMIT 3 OFFSET 3 * 0
+
+SELECT * FROM student LIMIT 3 OFFSET 3 * 1
