@@ -12,7 +12,7 @@ CREATE Table Student (
 )
 
 INSERT INTO
-    student (
+    Student (
         first_name,
         last_name,
         age,
@@ -24,71 +24,225 @@ INSERT INTO
         country
     )
 VALUES (
-        'Rakesh',
-        'Kumar',
-        22,
-        'A',
-        'B.Tech',
-        '3dL1e@example.com',
-        '1999-01-01',
-        'A+',
-        'India'
-    ),
-    (
-        'John',
-        'Doe',
+        'Alice',
+        'Johnson',
         20,
-        'B',
-        'B.Tech',
-        '7bV0t@example.com',
-        '1999-01-01',
+        'A',
+        'Computer Science',
+        'alice.johnson@example.com',
+        '2005-04-12',
         'A+',
         'USA'
     ),
     (
-        'Rohan',
-        'Kumar',
+        'Bob',
+        'Smith',
         22,
+        'B',
+        'Mathematics',
+        'bob.smith@example.com',
+        '2003-08-19',
+        'B+',
+        'Canada'
+    ),
+    (
+        'Charlie',
+        'Brown',
+        19,
         'A',
-        'B.Tech',
-        '3dL1e@example.com',
-        '1999-01-01',
-        'A+',
+        'Physics',
+        'charlie.brown@example.com',
+        '2005-11-05',
+        'O-',
+        'UK'
+    ),
+    (
+        'Diana',
+        'Ross',
+        21,
+        'C',
+        'History',
+        'diana.ross@example.com',
+        '2003-01-23',
+        'AB+',
+        'Australia'
+    ),
+    (
+        'Ethan',
+        'Clark',
+        23,
+        'B',
+        'Economics',
+        'ethan.clark@example.com',
+        '2002-03-14',
+        'O+',
+        'Germany'
+    ),
+    (
+        'Fiona',
+        'Lewis',
+        20,
+        'A',
+        'Biology',
+        'fiona.lewis@example.com',
+        '2005-09-17',
+        'B-',
+        'France'
+    ),
+    (
+        'George',
+        'Hall',
+        22,
+        'C',
+        'Chemistry',
+        'george.hall@example.com',
+        '2003-06-25',
+        'A-',
         'India'
     ),
     (
-        'Abdul',
-        'Kalam',
-        22,
-        'A',
-        'B.Tech',
-        '3dL1e@example.com',
-        '1999-01-01',
-        'A+',
-        'Bangladesh'
-    ),
-    (
-        'Hamid',
-        'Khan',
-        22,
-        'A',
-        'B.Tech',
-        '3dL1e@example.com',
-        '1999-01-01',
-        'A+',
-        'Pakistan'
-    ),
-    (
-        'Tom',
-        'Hanks',
-        22,
-        'A',
-        'B.Tech',
-        '3dL1e@example.com',
-        '1999-01-01',
-        'A+',
+        'Hannah',
+        'Allen',
+        21,
+        'B',
+        'Engineering',
+        'hannah.allen@example.com',
+        '2004-02-20',
+        'O+',
         'USA'
-    )
+    ),
+    (
+        'Ian',
+        'Wright',
+        20,
+        'A',
+        'Philosophy',
+        'ian.wright@example.com',
+        '2005-10-11',
+        'AB-',
+        'New Zealand'
+    ),
+    (
+        'Julia',
+        'Adams',
+        19,
+        'B',
+        'Literature',
+        'julia.adams@example.com',
+        '2006-05-06',
+        'A+',
+        'South Africa'
+    ),
+    (
+        'Kevin',
+        'Turner',
+        23,
+        'C',
+        'Computer Science',
+        'kevin.turner@example.com',
+        '2002-12-13',
+        'B+',
+        'Brazil'
+    ),
+    (
+        'Laura',
+        'Hill',
+        20,
+        'A',
+        'Physics',
+        'laura.hill@example.com',
+        '2005-07-29',
+        'O-',
+        'Japan'
+    ),
+    (
+        'Mike',
+        'Scott',
+        21,
+        'B',
+        'Mathematics',
+        'mike.scott@example.com',
+        '2004-03-22',
+        'A+',
+        'Italy'
+    ),
+    (
+        'Nina',
+        'Ward',
+        22,
+        'A',
+        'Economics',
+        'nina.ward@example.com',
+        '2003-11-30',
+        'B-',
+        'Netherlands'
+    ),
+    (
+        'Oscar',
+        'King',
+        23,
+        'C',
+        'Engineering',
+        'oscar.king@example.com',
+        '2002-01-05',
+        'AB+',
+        'Mexico'
+    ),
+    (
+        'Paula',
+        'Green',
+        21,
+        'B',
+        'Computer Science',
+        'paula.green@example.com',
+        '2004-08-16',
+        'O+',
+        'Spain'
+    ),
+    (
+        'Quincy',
+        'Baker',
+        20,
+        'A',
+        'History',
+        'quincy.baker@example.com',
+        '2005-09-04',
+        'A-',
+        'Portugal'
+    ),
+    (
+        'Rachel',
+        'Moore',
+        19,
+        'B',
+        'Literature',
+        'rachel.moore@example.com',
+        '2006-02-09',
+        'O-',
+        'USA'
+    ),
+    (
+        'Steve',
+        'Taylor',
+        22,
+        'C',
+        'Biology',
+        'steve.taylor@example.com',
+        '2003-06-01',
+        'B+',
+        'Russia'
+    ),
+    (
+        'Tina',
+        'Evans',
+        21,
+        'A',
+        'Chemistry',
+        'tina.evans@example.com',
+        '2004-04-18',
+        'AB-',
+        'Bangladesh'
+    );
 
 -- to print all data
 SELECT * FROM student
