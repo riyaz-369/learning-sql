@@ -119,9 +119,6 @@ WHERE (
     )
     AND age >= 22
 
--- to print only first name which starts with R
-SELECT * FROM student WHERE first_name LIKE 'R%'
-
 -- upper case of first name (upper is a scalar func)
 SELECT upper(first_name) as first_name FROM student
 
@@ -171,3 +168,15 @@ SELECT count(*) as total FROM student
 
 -- to print maximum length of first name
 SELECT max(length(first_name)) FROM student
+
+-- to print only first name which starts with R
+SELECT * FROM student WHERE first_name LIKE 'R%'
+
+-- to print only first name which ends with n
+SELECT * FROM student WHERE first_name LIKE '%n'
+
+-- to print only first name which contains second letter as a
+SELECT * FROM student WHERE first_name LIKE '_a%'
+
+-- case insensitive
+SELECT * FROM student WHERE first_name ILIKE 'a%'
