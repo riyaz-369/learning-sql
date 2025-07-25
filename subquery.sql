@@ -104,10 +104,9 @@ VALUES (
         '2020-06-11'
     );
 
-DROP TABLE employees;
+-- DROP TABLE employees;
 
 --? Problem 1: Find all employees whose salary is greater then the highest salary in the HR department.
-
 SELECT max(salary) FROM employees WHERE dept_name = 'HR'
 
 SELECT *
